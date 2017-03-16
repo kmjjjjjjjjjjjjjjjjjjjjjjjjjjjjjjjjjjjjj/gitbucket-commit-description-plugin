@@ -1,4 +1,4 @@
-name := "gitbucket-display-commit-description-for-pull-request-plugin"
+name := "gitbucket-commit-description-plugin"
 
 organization := "jp.gr.java_conf.kmj"
 

@@ -5,9 +5,9 @@ import javax.servlet.ServletContext
 import gitbucket.core.service.SystemSettingsService.SystemSettings
 
 class Plugin extends gitbucket.core.plugin.Plugin {
-  override val pluginId: String = "display_commit_description_for_pull_request"
-  override val pluginName: String = "display commit description for pull request Plugin"
-  override val description: String = "display commit description for pull request plug-in"
+  override val pluginId: String = "gitbucket-commit-description-plugin"
+  override val pluginName: String = "gitbucket commit description Plugin"
+  override val description: String = "display commit description plug-in"
   override val versions: List[Version] = List(new Version("1.0.0"))
 
   override def javaScripts(registry: PluginRegistry, context: ServletContext, settings: SystemSettings): Seq[(String, String)] = {
