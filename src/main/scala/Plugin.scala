@@ -12,7 +12,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
 
   override def javaScripts(registry: PluginRegistry, context: ServletContext, settings: SystemSettings): Seq[(String, String)] = {
     Seq(
-        ".*/pull/.*" -> s"""
+        ".*/(pull|commits)/.*" -> s"""
         | var x = document.getElementsByClassName("commit-description");
         | for(var i = 0; i < x.length; ++i){
         |   x[i].style = "display: ;";
